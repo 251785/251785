@@ -10,13 +10,13 @@ let n = 7
 // Add your code below:
 
 
-func factorial(from  n: Int) -> Int {
-    print("Calculating factorial(\(n))...")
+func factorial(from  number: Int) -> Int {
+    print("Calculating factorial(\(number))...")
     // recursive call
     if n > 1 {
-        let x = n * factorial(from:  n - 1)
-        print("Non-terminal case, returning \(x).")
-        return x
+        let fact = number * factorial(from:  number - 1)
+        print("Non-terminal case, returning \(fact).")
+        return fact
         }
     // condition to break recursion
     else {
@@ -25,6 +25,6 @@ func factorial(from  n: Int) -> Int {
     }           
 }
 
-let answer = factorial(from:  n)
-print("The final result is: \(answer).")
+
+print("The final result is: \(factorial(from: n)).")
 

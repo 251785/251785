@@ -17,11 +17,11 @@ func fib(_ int:  Int) -> Int {
     }
     else{
         
-        let x = fib(int-1) + fib(int-2)
+        let recursion = fib(int-1) + fib(int-2)
         print("Non-terminal case, returning \(x).")
-        return x
+        return recursion
     }
 }
 
-let result = fib(n)
-print("The final result is: \(result).")
+
+print("The final result is: \(fib(n)).")
