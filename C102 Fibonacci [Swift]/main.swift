@@ -8,8 +8,7 @@ let n = 7
 
 
 // Add your code below:
-let a = 21
-func fib( int: Int) -> Int {
+func fib(_ int:  Int) -> Int {
     print("Calculating fibonacci(\(int))...")
     if(int <= 2){
         
@@ -18,11 +17,11 @@ func fib( int: Int) -> Int {
     }
     else{
         
-        let x = fib(int: int-1) + fib(int: int-2)
+        let x = fib(int-1) + fib(int-2)
         print("Non-terminal case, returning \(x).")
         return x
     }
 }
 
-let result = fib(int:  n)
-print("The final result is: \(result)).")
+let result = fib(n)
+print("The final result is: \(result).")

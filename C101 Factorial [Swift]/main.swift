@@ -25,6 +25,6 @@ func factorial(from  n: Int) -> Int {
     }           
 }
 
-let result = factorial(from:  n)
-print("The final result is: \(result)).")
+let answer = factorial(from:  n)
+print("The final result is: \(answer).")
 
